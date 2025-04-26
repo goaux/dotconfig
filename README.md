@@ -49,9 +49,10 @@ both reading from existing configurations and creating new configuration files.
 dir, exists := dotconfig.Dir("myapp")
 if !exists {
 	if err := os.MkdirAll(dir, 0755); err != nil {
-		return err
+		panic(err)
 	}
 }
+fmt.Println(dir)
 ```
 
 ### File
@@ -59,7 +60,7 @@ if !exists {
 ```go
 file, status := dotconfig.File("myapp", "config.yaml")
 if status == dotconfig.NotExists {
-	if err := os.MkdirAll(filepath.Base(file), 0755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(file), 0755); err != nil {
 		return err
 	}
 }
