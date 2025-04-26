@@ -32,7 +32,7 @@ or with the file extension appended to dot-prefixed application names.
 2. `$HOME/.config/<app>/<name>` (if XDG_CONFIG_HOME is not set)
 3. `$HOME/lib/<app>/<name>` (for Plan9 compatibility)
 4. `$HOME/.<app>/<name>` (if os.UserHomeDir returns no error)
-5. `$HOME/.<app><ext>` (where `ext` is the file extension of `name`)
+5. `$HOME/.<app><ext>` (where `<ext>` is the file extension of `<name>`)
 6. `.<app>/<name>` (in current directory)
 7. `.<app><ext>` (in current directory, as last resort)
 
