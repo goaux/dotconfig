@@ -1,4 +1,8 @@
 # dotconfig
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/goaux/dotconfig.svg)](https://pkg.go.dev/github.com/goaux/dotconfig)
+[![Go Report Card](https://goreportcard.com/badge/github.com/goaux/dotconfig)](https://goreportcard.com/report/github.com/goaux/dotconfig)
+
 Package dotconfig provides utilities for finding application configuration directories
 and files following standard conventions across different operating systems.
 
