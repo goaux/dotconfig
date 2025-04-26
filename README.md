@@ -52,7 +52,6 @@ if !exists {
 		panic(err)
 	}
 }
-fmt.Println(dir)
 ```
 
 ### File
