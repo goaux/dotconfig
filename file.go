@@ -6,6 +6,8 @@ import (
 	"path/filepath"
 )
 
+//go:generate stringer -type fileExists
+
 type fileExists int
 
 const (
